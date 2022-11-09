@@ -1,0 +1,20 @@
+{
+  "name": "mathem-delivery-feature-confirm",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/mathem/delivery/feature-confirm/src",
+  "prefix": "mathem-assignment",
+  "targets": {
+    
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mathem/delivery/feature-confirm/**/*.ts",
+          "libs/mathem/delivery/feature-confirm/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

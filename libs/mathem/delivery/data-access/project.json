@@ -1,0 +1,19 @@
+{
+  "name": "mathem-delivery-data-access",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/mathem/delivery/data-access/src",
+  "prefix": "mathem-assignment",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mathem/delivery/data-access/**/*.ts",
+          "libs/mathem/delivery/data-access/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,9 @@
+{
+  "name": "mathem-shared-root-styles",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/mathem/shared/root/styles/src",
+  "prefix": "mathem-assignment",
+  "targets": {},
+  "tags": []
+}

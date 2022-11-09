@@ -1,0 +1,104 @@
+{
+  "name": "mathem",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/mathem/src",
+  "prefix": "mathem-assignment",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/apps/mathem",
+        "index": "apps/mathem/src/index.html",
+        "main": "apps/mathem/src/main.ts",
+        "polyfills": "apps/mathem/src/polyfills.ts",
+        "tsConfig": "apps/mathem/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "favicon.ico",
+            "input": "libs/mathem/shared/root/assets/src",
+            "output": "./"
+          },
+          {
+            "glob": "**/*",
+            "input": "libs/mathem/shared/root/assets/src",
+            "output": "assets"
+          }
+        ],
+        "styles": [
+          "libs/mathem/shared/root/styles/src/index.scss"
+        ],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "libs/mathem/shared/root/styles/src/lib"
+          ]
+        },
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "libs/mathem/shared/root/environments/src/lib/environment.ts",
+              "with": "libs/mathem/shared/root/environments/src/lib/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "mathem:build:production"
+        },
+        "development": {
+          "browserTarget": "mathem:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "mathem:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/mathem/**/*.ts",
+          "apps/mathem/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

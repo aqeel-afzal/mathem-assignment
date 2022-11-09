@@ -1,0 +1,22 @@
+:root {
+  // Font family
+  --ff-primary: 'Roboto', sans-serif;
+
+  // Font Sizes
+  --fs-14: 0.875rem; // 14px
+
+  // Body style variables
+  --ff-body: var(--ff-primary);
+  --fs-body: var(--fs-14);
+
+  // Colors
+  --clr-primary: #080808;
+  --clr-white: #ffffff;
+  --clr-blue: #0f96ff;
+  --clr-gray: #cccccc;
+  --clr-gray-50: rgba(144, 144, 144, 0.5);
+  --clr-gray-20: rgba(160, 160, 160, 0.2);
+
+  // Border
+  --brd-raduis: 4px;
+}

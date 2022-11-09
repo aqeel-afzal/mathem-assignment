@@ -1,0 +1,27 @@
+<section class="feature-delivery">
+  <mathem-assignment-mathem-delivery-shared-ui-feature-date
+    [dates]="(dates$ | async)!"
+    (selectDate)="onSelectDate($event)"
+  ></mathem-assignment-mathem-delivery-shared-ui-feature-date>
+
+  <mathem-assignment-mathem-delivery-shared-ui-feature-time
+    [times]="(times$ | async)!"
+    (selectTime)="onSelectTime($event)"
+  ></mathem-assignment-mathem-delivery-shared-ui-feature-time>
+
+  <p>
+    <mathem-assignment-checkbox
+      [value]="(inHomeDelivery$ | async)!"
+      label="In Home delivery"
+      (triggerChange)="onHomeDeliveryChange($event)"
+    ></mathem-assignment-checkbox>
+  </p>
+
+  <p>
+    <mathem-assignment-button
+      label="Confirm"
+      [disabled]="disabled"
+      (btnClick)="onBtnClick()"
+    ></mathem-assignment-button>
+  </p>
+</section>

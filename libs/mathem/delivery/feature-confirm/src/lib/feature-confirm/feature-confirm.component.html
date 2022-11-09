@@ -1,0 +1,12 @@
+<article class="feature-confirm">
+  <p *ngIf="selectedTime$ | async as selectedTime">
+    Date: {{ selectedTime.deliveryDate }}<br />
+    Time: {{ selectedTime.startTime + ' - ' + selectedTime.stopTime }}<br />
+  </p>
+  <p>
+    <mathem-assignment-button
+      label="Back"
+      (btnClick)="onBtnClick()"
+    ></mathem-assignment-button>
+  </p>
+</article>

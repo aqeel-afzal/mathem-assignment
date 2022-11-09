@@ -1,0 +1,19 @@
+{
+  "name": "mathem-delivery-shared-ui-feature-time",
+  "$schema": "../../../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/mathem/delivery/shared/ui/feature-time/src",
+  "prefix": "mathem-assignment",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mathem/delivery/shared/ui/feature-time/**/*.ts",
+          "libs/mathem/delivery/shared/ui/feature-time/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

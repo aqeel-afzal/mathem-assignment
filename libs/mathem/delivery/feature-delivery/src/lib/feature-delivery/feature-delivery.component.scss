@@ -1,0 +1,14 @@
+@import 'global.variables';
+
+.feature-delivery {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1080px;
+  background-color: var(--clr-gray-20);
+  border-radius: 5px;
+  padding: 2em 0;
+
+ 
+}

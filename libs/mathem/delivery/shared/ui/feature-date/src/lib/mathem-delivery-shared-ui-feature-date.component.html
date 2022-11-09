@@ -1,0 +1,5 @@
+<article class="feature-date">
+  <button *ngFor="let date of dates" class="date" (click)="onSelect(date)">
+    {{ date.value }}
+  </button>
+</article>

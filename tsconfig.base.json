@@ -1,0 +1,55 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mathem-assignment/mathem/delivery/data-access": [
+        "libs/mathem/delivery/data-access/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/delivery/feature-confirm": [
+        "libs/mathem/delivery/feature-confirm/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/delivery/feature-delivery": [
+        "libs/mathem/delivery/feature-delivery/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/delivery/feature-shell": [
+        "libs/mathem/delivery/feature-shell/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/delivery/shared/ui/feature-date": [
+        "libs/mathem/delivery/shared/ui/feature-date/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/delivery/shared/ui/feature-time": [
+        "libs/mathem/delivery/shared/ui/feature-time/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/shared/root/assets": [
+        "libs/mathem/shared/root/assets/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/shared/root/environments": [
+        "libs/mathem/shared/root/environments/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/shared/root/styles": [
+        "libs/mathem/shared/root/styles/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/shared/types": [
+        "libs/mathem/shared/types/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/shared/ui": [
+        "libs/mathem/shared/ui/src/index.ts"
+      ],
+      "@mathem-assignment/mathem/shell": ["libs/mathem/shell/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

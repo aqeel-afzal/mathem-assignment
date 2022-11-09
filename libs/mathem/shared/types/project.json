@@ -1,0 +1,19 @@
+{
+  "name": "mathem-shared-types",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/mathem/shared/types/src",
+  "prefix": "mathem-assignment",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mathem/shared/types/**/*.ts",
+          "libs/mathem/shared/types/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
